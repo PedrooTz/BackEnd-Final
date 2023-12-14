@@ -192,23 +192,23 @@ var clientes = {
             {
                 id: 1,
                 nome: 'Pizza de Calabresa',
-                descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                descricao: 'Lorem ipsum',
                 preco: '23,59',
                 img: 'img/',
                 avaliacao: '3'
             },
             {
                 id: 2,
-                nome: 'Pizza de Peperoni com queijo', 
-                descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                nome: 'Pizza de Peperoni com queijo',
+                descricao: 'Lorem ipsum', 
                 preco: '24.00',
                 img: 'img/',
                 avaliacao: '4'
             },
             {   
                 id: 3,
-                nome: 'Pizza de Peperoni com queijo e tomate', 
-                descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                nome: 'Pizza de Peperoni com queijo e tomate',
+                descricao: 'Lorem ipsum',
                 preco: '24.00',
                 img: 'img/',
                 avaliacao: '2'
@@ -216,13 +216,13 @@ var clientes = {
             {
                 id: 4,
                 nome: 'Pizza brotinho com queijo e tomate', 
-                descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                descricao: 'Lorem ipsum',                
                 preco: '24.00',
                 img: 'img/',
                 avaliacao: '4'
             },
             {
-                id: 3,
+                id: 5,
                 nome: 'Coca-Cola', 
                 descricao: 'Refrigerante Garrafa 3l, embalagem ecônomica.',
                 preco: '14.99',
@@ -230,7 +230,7 @@ var clientes = {
                 avaliacao: '5'
             },
             {
-                id: 4,
+                id: 6,
                 nome: 'Cerveja Heineken', 
                 descricao: 'Refrigerante Garrafa 3l, embalagem ecônomica..',
                 preco: '17.99',

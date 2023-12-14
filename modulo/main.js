@@ -108,11 +108,31 @@ const getClientesPizzaria = function() {
 
 // ********************************************************************************************************
 
+const getListaProdutosPizzaria = function (){
 
+
+    let ArraySigla = []
+    let JsonSigla = {}
+    let cont = 0;
+    while  (cont < 6 ){
+       
+    ArraySigla.push(pizzariaApi.produtos.dados[cont])
+    cont++
+    }
+    JsonSigla.pizzaria = ArraySigla.length
+    JsonSigla.classe = ArraySigla
+    return JsonSigla
+       
+       
+    };
+
+// **************************************************************************************************************** 
 
 // console.log(getListaClientesPizzaria());
 
 // console.log(getProdutosPizzaria());
+
+// console.log(getListaProdutosPizzaria());
 
 // console.log(getClientesPizzaria());
 
@@ -121,4 +141,7 @@ const getClientesPizzaria = function() {
 module.exports = {
     getDadosPizzaria,
     getListaClientesPizzaria,
+    getClientesPizzaria,
+    getProdutosPizzaria,
+    getListaProdutosPizzaria
 }

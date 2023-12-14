@@ -29,14 +29,53 @@ app.use((request, response, next)=>{
 
     next();
 })
-app.get('pizzaria.js', cors(), async function(request, response,next){
-    let controlePizzaria = require('./modulo/main');
-    let categorias = controlePizzaria.categorias();
 
-    response.json(categorias);
+// Retorna as informações de um determinado produto filtrado pelo seu ID.
+
+// app.get('/dados/id', cors(), async function(request, response,next){
+//     let controlePizzaria = require('./modulo/main');
+//     let categorias = controlePizzaria.getProdutosPizzaria();
+
+//     response.json(categorias);
+//     response.status(200);
+// });
+
+// app.listen(9090, function(){
+//     console.log('API funcionando e aguardando requisições!!!');
+// })
+
+// Retorna as informações de um usuário filtrando pelo seu nome.
+
+// app.get('/usuarios/nome', cors(), async function(request, response, next){
+//     // Import do arquivo de funções
+//     let controleUsuarios = require('./modulo/main');
+//     let dadosPizzaria = controleUsuarios.getClientesPizzaria();
+
+//     response.json(dadosPizzaria);
+//     response.status(200);
+
+       
+// });
+
+// app.listen(9090, function(){
+//     console.log('API funcionando e aguardando requisições!!!');
+// })
+
+// Retornando a lista de usuários
+
+app.get('pizzariaApi/usuarios/clientes', cors(), async function(request, response, next){
+    // Import do arquivo de funções
+    let controleUsuarios = require('./modulo/main');
+    let listaClientes = controleUsuarios.getListaClientesPizzaria();
+
+    response.json(listaClientes);
     response.status(200);
+
+       
 });
 
-app.listen(8080, function(){
+
+
+app.listen(7070, function(){
     console.log('API funcionando e aguardando requisições!!!');
 })
